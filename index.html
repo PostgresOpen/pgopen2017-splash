@@ -4,48 +4,68 @@
 	<head>
 		<title>PostgresOpen 2017</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body>
-		<div id="block"></div>
+	<body class="is-loading">
 
-		<!-- Header -->
-			<header id="header">
-				<h1>PostgresOpen 2017</h1>
-				<p>Our full site is coming soon.<br />
-			  SAN FRANCISCO, CA | FALL 2017</p>
-			</header>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="mailto:program2017@postgresopen.org" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-						<li><a href="https://twitter.com/postgresopen" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.facebook.com/PostgresOpen" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.flickr.com/photos/103481966@N07/sets/72157650466984887/" class="icon fa-flickr"><span class="label">GitHub</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; PostgresOpen 2017. All rights reserved.</li>
-					</ul>
-				</footer>
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<h1>PostgresOpen 2017</h1>
+							<p>Our full site is coming soon</br>
+								SAN FRANCISCO, CA | FALL 2017
+							</p>
+							<hr>
+						</header>
 
-				<!-- Subscription Bar -->
-				<div id="subscriptionbar">
-					<p class="texto">
-						Interested in attending PostgresOpen? Sign up for conference updates!
-					</p>
-					<p class="disclosure">
-						- We don't spam and will never share your email address -
-					</p>
-					<div class="Registro">
-						<form method="post" action="#">
-						<span class="fontawesome-envelope-alt"></span>
-						<a class="reg-button" href="mailto:program2017@postgresopen.org?subject=Add Me">Subscribe</a>
-					</div>
-				</div>
+							<ul class="actions">
+								<p>
+									Interested in attending PostgresOpen? Sign up for conference updates!
+								</p>
+								<p>
+									We don't spam, and will never share your email address.
+								</p>
+								<li><a href="mailto:program2017@postgresopen.org?subject=Add Me" class="button">Subscribe</a></li>
+							</ul>
+
+						<hr />
+
+						<footer>
+							<ul class="icons">
+								<li><a href="mailto:program2017@postgresopen.org" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+								<li><a href="https://twitter.com/postgresopen" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/PostgresOpen" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.flickr.com/photos/103481966@N07/sets/72157650466984887/" class="icon fa-flickr"><span class="label">GitHub</span></a></li>
+							</ul>
+						</footer>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; PostgresOpen</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
 	</body>
 </html>
