@@ -1,0 +1,27 @@
+{%extends "pgconfopen/base.html" %}
+{%block content%}
+{% load staticfiles %}
+{%load markup%}
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major">
+            <span class="header"><img src="{% static 'images/blog.svg' %}" alt="" /></span>
+						<h2>Blog</h2>
+					</header>
+
+{%for blog in blogposts %}
+          <!-- Sponsorship -->
+          <section class="section">
+            <hr>
+            <h3>{{blog.title}}</h3>
+            <h4>Posted By: {{blog.sponsor.name}} on {{blog.posttime|date:"M d Y"}}</h4>
+            {{blog.content|markdown}}
+            <hr>
+          </section>
+{%endfor%}
+
+        </div>
+      </section>
+{% endblock %}
