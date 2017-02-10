@@ -1046,13 +1046,13 @@
 /* Banner */
 
 	#banner {
-		background-image: url(../images/dark_tint.png), url(../images/bg01.svg);
+		background-image: url(../images/banner.jpg);
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
 	  background-attachment: fixed;
 		color: #ffffff;
-		padding: 14em 0em 14em;
+		padding: 12em 0;
 		text-align: center;
 		-webkit-transform: translate3d(0,0,0);
 	}
